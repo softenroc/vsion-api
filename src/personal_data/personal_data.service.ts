@@ -56,8 +56,13 @@ export class PersonalDataService {
     }
 
     async delete(document: string): Promise<any> {
-        const personalData = await this.personalDataRepository.findOneBy({document: document});        
-        await this.personalDataRepository.delete(personalData);
-        return {message: `paciente  ${personalData.name} eliminado`};
+        const personalData = await this.personalDataRepository.findOneBy({document: document});      
+        if(!personalData) {
+            throw new NotFoundException({message: 'no existe el paciente'});          
+        } else {
+            await this.personalDataRepository.delete(personalData.id);
+            return {message: `paciente  ${personalData.name} eliminado`};
+        }
+        
     }
 }
