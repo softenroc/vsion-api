@@ -1,3 +1,4 @@
+import { PersonalDataRepository } from './personal_data.repository';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Module } from '@nestjs/common';
 import { PersonalDataService } from './personal_data.service';
@@ -6,7 +7,7 @@ import { PersonalDataEntity } from './personal_data.entity';
 
 @Module({
   imports: [TypeOrmModule.forFeature([PersonalDataEntity])],
-  providers: [PersonalDataService],
+  providers: [PersonalDataService,PersonalDataRepository],
   controllers: [PersonalDataController]
 })
 export class PersonalDataModule {}
