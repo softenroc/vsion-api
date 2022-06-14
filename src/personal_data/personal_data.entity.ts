@@ -55,19 +55,19 @@ export class PersonalDataEntity {
     companionRelation: string;
 }
 
-enum CivilStatus {
+export enum CivilStatus {
     CASADO,
     SOLTERO, 
     VIUDO,
     UNION_LIBRE,
     NSNR
 }
-enum Gender {
+export enum Gender {
     MASCULINO,
     FEMENINO, 
     NSNR
 }
-enum DocumentType {
+export enum DocumentType {
     CEDULA,
     PASAPORTE,
     TARJETA_IDENTIDAD,

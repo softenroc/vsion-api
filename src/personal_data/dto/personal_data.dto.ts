@@ -1,21 +1,22 @@
+import { DocumentType, Gender, CivilStatus } from "../personal_data.entity";
 
 export class PersonalDataDto {
-    
-    id?: number;
+
     documentType?: DocumentType;
     document?: string;
     name?: string;
     lastName?: string;
     phone?: string;
     dateOfBirth?: Date;
-    gender?: string;
+    gender?: Gender;
     email?: string;
     direction?: string;
     city?: string;
-    civilStatus?: string;
+    civilStatus?: CivilStatus;
     ocupation?:string;
     esp?:string;
     companionName?:string;
     companionDocument?: string;
     companionRelation?: string;
+
 }
