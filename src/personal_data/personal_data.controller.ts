@@ -1,6 +1,6 @@
 import { PersonalDataDto } from './dto/personal_data.dto';
 import { PersonalDataService } from './personal_data.service';
-import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Post, Put, UsePipes, ValidationPipe } from '@nestjs/common';
 
 @Controller('personal-data')
 export class PersonalDataController {
@@ -19,6 +19,7 @@ export class PersonalDataController {
         return this.personalDataService.findByDocument(document);
     }
 
+    @UsePipes(new ValidationPipe())
     @Post()
     async create(@Body() dto: PersonalDataDto){
         return this.personalDataService.create(dto);

@@ -44,7 +44,7 @@ export class PersonalDataService {
     async create(dto: PersonalDataDto): Promise<any> {
         const personalData = this.personalDataRepository.create(dto);
         await this.personalDataRepository.save(personalData);
-        return {message: `paciente ${personalData.name} registrado correctamente`};
+        return dto;
     }
 
     
