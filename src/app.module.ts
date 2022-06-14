@@ -5,6 +5,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_DATABASE } from './config/constants';
 import { dirname } from 'path';
+import { PersonalDataModule } from './personal_data/personal_data.module';
 
 
 @Module({
@@ -25,7 +26,8 @@ import { dirname } from 'path';
       synchronize: true,
     }),
     inject: [ConfigService],
-  })],
+  }),
+  PersonalDataModule],
   controllers: [AppController],
   providers: [AppService],
 })
