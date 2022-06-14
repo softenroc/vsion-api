@@ -42,7 +42,7 @@ export class PersonalDataEntity {
     @Column({name:'ocupation', type:'varchar', length:50, nullable:true})
     ocupation:string;
     
-    @Column({name:'esp', type:'varchar', length:50, nullable:false})
+    @Column({name:'eps', type:'varchar', length:50, nullable:false})
     esp:string;
     
     @Column({name:'companion_name', type:'varchar', length:50, nullable:true})

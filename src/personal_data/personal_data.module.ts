@@ -7,7 +7,7 @@ import { PersonalDataEntity } from './personal_data.entity';
 
 @Module({
   imports: [TypeOrmModule.forFeature([PersonalDataEntity])],
-  providers: [PersonalDataService,PersonalDataRepository],
+  providers: [PersonalDataService],
   controllers: [PersonalDataController]
 })
 export class PersonalDataModule {}
