@@ -11,7 +11,7 @@ export class PersonalDataService {
     personalDataMapper: PersonalDataMapper;
 
     constructor(
-        @InjectRepository(PersonalDataRepository) 
+        @InjectRepository(PersonalDataEntity) 
         private personalDataRepository: PersonalDataRepository
         ) { }
 
