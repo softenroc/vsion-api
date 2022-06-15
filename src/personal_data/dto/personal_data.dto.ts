@@ -22,7 +22,7 @@ export class PersonalDataDto {
     city?: string;
     civilStatus?: CivilStatus;
     ocupation?:string;
-    esp?:string;
+    eps?:string;
     companionName?:string;
     companionDocument?: string;
     companionRelation?: string;

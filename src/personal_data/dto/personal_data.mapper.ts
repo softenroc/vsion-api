@@ -21,7 +21,7 @@ import { PersonalDataDto } from "./personal_data.dto";
         personalDataDto.city? this.personalDataEntity.city = personalDataDto.city = personalDataDto.city : this.personalDataEntity.city =  this.personalDataEntity.city;
         personalDataDto.civilStatus? this.personalDataEntity.civilStatus = personalDataDto.civilStatus = personalDataDto.civilStatus : this.personalDataEntity.civilStatus =  this.personalDataEntity.civilStatus;
         personalDataDto.ocupation? this.personalDataEntity.ocupation = personalDataDto.ocupation = personalDataDto.ocupation : this.personalDataEntity.ocupation =  this.personalDataEntity.ocupation;
-        personalDataDto.esp? this.personalDataEntity.esp = personalDataDto.esp = personalDataDto.esp : this.personalDataEntity.esp =  this.personalDataEntity.esp;
+        personalDataDto.eps? this.personalDataEntity.eps = personalDataDto.eps = personalDataDto.eps : this.personalDataEntity.eps =  this.personalDataEntity.eps;
         personalDataDto.companionName? this.personalDataEntity.companionName = personalDataDto.companionName = personalDataDto.companionName : this.personalDataEntity.companionName =  this.personalDataEntity.companionName;
         personalDataDto.companionDocument? this.personalDataEntity.companionDocument = personalDataDto.companionDocument = personalDataDto.companionDocument : this.personalDataEntity.companionDocument =  this.personalDataEntity.companionDocument;
         personalDataDto.companionRelation? this.personalDataEntity.companionRelation = personalDataDto.companionRelation = personalDataDto.companionRelation : this.personalDataEntity.companionRelation =  this.personalDataEntity.companionRelation;

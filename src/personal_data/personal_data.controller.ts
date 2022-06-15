@@ -30,7 +30,7 @@ export class PersonalDataController {
         return this.personalDataService.update(document, dto);
     }
 
-    @Delete(':id')
+    @Delete(':document')
     async delete(@Param('document') document: string){
         return this.personalDataService.delete(document);
     }
