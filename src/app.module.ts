@@ -5,7 +5,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_DATABASE } from './config/constants';
 import { PersonalDataModule } from './personal_data/personal_data.module';
-import { DataSource } from 'typeorm';
+import { SaleDataModule } from './sale_data/sale_data.module';
 
 
 @Module({
@@ -23,12 +23,12 @@ import { DataSource } from 'typeorm';
       password: configService.get<string>(DB_PASSWORD),
       database: configService.get<string>(DB_DATABASE),
       entities: [ __dirname + '/**/*.entity{.ts,.js}'],
-      synchronize: true,
+      synchronize: false,
       logging: true
     }),
     inject: [ConfigService],
   }),
-  PersonalDataModule],
+  PersonalDataModule, SaleDataModule],
   controllers: [AppController],
   providers: [AppService],
 })
