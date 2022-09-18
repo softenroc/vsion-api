@@ -4,7 +4,7 @@ CREATE TABLE `sale_data` (
 	`date_invoice` DATE,
 	`invoice_id` VARCHAR(20),
 	`mount` NUMERIC,
-	`tax` DATE,
+	`tax` NUMERIC,
 	`lens` NUMERIC,
 	`balance` NUMERIC,
 	`payment_method` VARCHAR(20),
