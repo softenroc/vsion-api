@@ -8,6 +8,6 @@ CREATE TABLE `sale_data` (
 	`lens` NUMERIC,
 	`balance` NUMERIC,
 	`payment_method` VARCHAR(20),
-	`status` VARCHAR(50) NOT NUL,	
+	`status` VARCHAR(50) NOT NULL,	
 	PRIMARY KEY (`id`)
 );
