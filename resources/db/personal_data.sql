@@ -1,7 +1,3 @@
---- CREATE DATABASE
-
-CREATE 
-
 CREATE TABLE `personal_data` (
 	`id` BIGINT NOT NULL AUTO_INCREMENT,
 	`document_type` VARCHAR(20) NOT NULL,
